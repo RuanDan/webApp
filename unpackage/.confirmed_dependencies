@@ -1,0 +1,105 @@
+{
+  "byb.html": {
+    "href": "byb.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/jquery.min.js",
+      "img/banner.jpg",
+      "img/doctor.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "dl.html": {
+    "href": "dl.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/jquery.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "dlwzxs.html": {
+    "href": "dlwzxs.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "img/map.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "fbht.html": {
+    "href": "fbht.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "editor/style.css",
+      "editor/myemojiPl.css",
+      "js/jquery.min.js",
+      "editor/artEditor.min.js",
+      "editor/index.js",
+      "editor/myemojiPl.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "fwpj.html": {
+    "href": "fwpj.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/swiper.min.css",
+      "css/style.css",
+      "js/swiper.min.js",
+      "img/user.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "grzx.html": {
+    "href": "grzx.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "img/user_pic.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "gyhd.html": {
+    "href": "gyhd.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/swiper.min.css",
+      "css/style.css",
+      "js/jquery.min.js",
+      "js/swiper.min.js",
+      "img/hd_l.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [],
+    "refer": [
+      "byb.html",
+      "dl.html",
+      "dlwzxs.html",
+      "fbht.html",
+      "fwpj.html",
+      "grzx.html",
+      "gyhd.html"
+    ],
+    "priority": 0
+  }
+}

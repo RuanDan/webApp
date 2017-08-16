@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>我要评价</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({});
+    </script>
+</head>
+<body>
+	<!--标题 strart-->
+	<header class="mui-bar mui-bar-nav h-gradient">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">我要评价</h1>
+	</header>
+	<!--标题 end-->
+	<!--内容区 start-->
+	<div class="mui-content judge-form">
+		<div class="m-item">
+			<h1>服务保证</h1>
+			<p class="fs12">为保证我们更好的服务，请如实输入信息</p>
+		</div>
+		<div class="m-item">
+			<div class="text">就诊科室：<span class="color-o">儿科</span></div>
+			<div class="text">就诊时间：<span class="color-g">2月6日</span></div>
+		</div>
+		<div class="m-item border-b">
+			<div class="text" id="score">总体<i class="icon icon-level-star"></i><i class="icon icon-level-star"></i><i class="icon icon-level-star"></i><i class="icon icon-level-star"></i><i class="icon icon-level-star"></i></div>
+		</div>
+		<!--评价输入框 start-->
+		<form action="" method="post">
+			<input type="text" style="display: none;" id="score_num"/>
+			<textarea name="" class="m-textarea" placeholder="请输入您对本次服务的评价"></textarea>
+		</form>
+		<!--评价输入框 end-->
+		<!--提交按钮 start-->
+		<a class="btn-full">提交评价</a>
+		<!--提交按钮 end-->
+	</div>
+	<!--内容区 end-->
+	<script src="js/jquery.min.js" ></script>
+	<script>
+		window.onload=function(){
+			$('#score i').on('tap',function(){
+				var score_num=$(this).index()+1;
+				$(this).addClass('active');
+				$(this).prevAll().addClass('active');
+				$(this).nextAll().removeClass('active');
+				$('#score_num').val(score_num);
+				alert($('#score_num').val());
+			})
+		}
+	</script>
+</body>
+</html>

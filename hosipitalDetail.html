@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>医院详情</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/swiper.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({});
+    </script>
+</head>
+<body>
+	<!--标题 strart-->
+	<header class="mui-bar mui-bar-nav h-gradient">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">医院详情</h1>
+	</header>
+	<!--标题 end-->
+	<!--内容区 start-->
+	<div class="mui-content detail-h">
+		<!--详情滚动banner start-->
+		<!-- Swiper -->
+	    <div class="swiper-container banner">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+	            <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+	            <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+	            <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+	            <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+	            <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+	            <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+	            <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	    </div>
+	    <!--详情滚动banner end-->
+	    <!--医院说明 start-->
+	    <div class="cell sum-d">
+	    	<div class="l-tit">
+        		<img class="icon icon_h" src="img/hospital_i.png">
+            	幸福幸福幸福
+            	<span>三级</span>
+        	</div>
+            <p class="mui-ellipsis"><i class="icon icon-addr"></i>地址：湖北省武汉市江汉区胜利街26号</p>
+            <p class="mui-ellipsis"><i class="icon icon-tel"></i>电话：027-85726754</p>
+	    	<a href="#" class="btn btn-full">预约挂号</a>
+	    </div>
+	    <!--医院说明 end-->
+		<!--医院介绍 start-->
+		<div class="item-d">
+			<h1 class="border-b">医院介绍</h1>
+			<div class="cell">
+				<p>医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍医院介绍</p>
+			</div>
+		</div>
+		<!--医院介绍 end-->
+		<!--医院交通 start-->
+		<div class="item-d">
+			<h1 class="border-b">医院交通</h1>
+			<div class="cell">
+				<p><i class="icon icon-bus"></i>途径医院公交路线：市内乘2路、3路、5路、11路、18路车。</p>
+				<p><i class="icon icon-station"></i>站点：中心医院站</p>
+			</div>
+		</div>
+		<!--医院交通 end-->
+		<!--官方网站 start-->
+		<div class="item-d">
+			<h1 class="border-b">官方网站</h1>
+			<div class="cell">
+				<p><i class="icon icon-web"></i><a class="link" href="http://www.zxhospital.com/">http://www.zxhospital.com/</a></p>
+			</div>
+		</div>
+		<!--官方网站 end-->
+		<!--专家列表导航 start-->
+		<ul class="item-d item-link">
+			<li>
+				<a class="mui-navigate-right" href="#">
+					专家列表
+				</a>
+			</li>
+		</ul>
+		<!--专家列表导航 end-->
+		<!--评价 start-->
+		<div class="item-d judge">
+			<h2>用户评价 <span class="color">5.0分 </span>高于99%的同行</h2>
+			<div class="item border-b">
+				<div class="grid">
+					<img class="user-img" src="img/user.jpg"/>
+					<div class="grid-cell">
+						<p>用户名用户名用户名用户名</p>
+						<p><span class="star-bar"><i style="width:70%"></i></span>2016-07-18</p>
+					</div>
+				</div>
+				<div class="item-b">
+					服务很好，服务很好！服务很好，服务很好！服务很好，服务很好！服务很好，服务很好！服务很好，服务很好！
+				</div>
+				<div class="sub-btn">
+					<a><i class="icon icon_heart"></i>有用</a><a>举报</a>
+				</div>
+			</div>
+			<div class="item border-b">
+				<div class="item-t grid">
+					<img class="user-img" src="img/user.jpg"/>
+					<div class="grid-cell">
+						<p>用户名用户名用户名用户名</p>
+						<p><span class="star-bar"><i style="width:70%"></i></span>2016-07-18</p>
+					</div>
+				</div>
+				<div class="item-b">
+					服务很好，服务很好！服务很好，服务很好！服务很好，服务很好！服务很好，服务很好！服务很好，服务很好！
+				</div>
+				<div class="sub-btn">
+					<a><i class="icon icon_heart on"></i>有用</a><a>举报</a>
+				</div>
+			</div>
+			<!--查看所有评论-->
+			<ul class="item-link">
+				<li>
+					<a class="mui-navigate-right" href="#">
+						查看全部555条评论
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--评价 end-->
+	</div>
+	<!--内容区 end-->
+	<script src="js/swiper.min.js" ></script>
+	<script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationType: 'fraction'
+	    });
+    </script>
+</body>
+</html>

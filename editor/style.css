@@ -1,0 +1,102 @@
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+textarea {
+  border: none;
+  font-size: 1.4rem;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px;
+  color: #333333;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "宋体", Arial, Verdana, sans-serif;
+  outline: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+}
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  height: 90px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+input[type=text]:active,
+input[type=password]:active,
+textarea:active,
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+  border: none;
+  background: #ffffff;
+  outline: none;
+}
+::-webkit-input-placeholder {
+  -webkit-text-fill-color: #bdbdbd;
+}
+::-moz-placeholder {
+  color: #dddddd;
+}
+input:-ms-input-placeholder {
+  color: #dddddd;
+}
+textarea:-ms-input-placeholder {
+  color: #dddddd;
+}
+.publish-article-title {
+  padding: 10px;
+  background: #fff;
+}
+.publish-article-title input{
+	font-size: 16px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+}
+.title-tips {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.publish-article-content {
+  background: #fff;
+  padding: 10px;
+}
+.publish-article-content .article-content {
+  height: 280px;
+}
+.article-content p{
+	color: #aaa;
+}
+.publish-article-content .footer-btn {
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+}
+
+.upload-button{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	overflow: hidden;
+}
+.footer-btn .icon{
+	width: 36px;
+	height: 36px;
+}
+.footer-btn .upload{
+	display: block;
+}
+.upload-img{
+	background: url(../img/pic.png) no-repeat;
+	background-size: 100%;
+	margin-right: 10px;
+	margin: 2px;
+}

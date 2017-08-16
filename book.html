@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>在线预约</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({});
+    </script>
+</head>
+<body>
+	<!--标题 strart-->
+	<header class="mui-bar mui-bar-nav h-gradient">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">在线预约</h1>
+	</header>
+	<!--标题 end-->
+	<!--内容区 start-->
+	<div class="mui-content reservation">
+		<ul>
+			<!--单项选择 start-->
+			<li class="flex-box color-y">
+				<!--选取值之后添加class为on的类变亮-->
+				<div class="tip"></div>
+				<div class="reservation-box flex-box">
+					<i class="icon"><img src="img/icon_s_hospital.png"/></i>
+					<div class="cell mui-navigate-right">
+						<!--<input type="text" value="武汉市中心医院" disabled=""/>-->
+						<select class="multiple-select">
+							<option value="武汉市中心医院" disabled="" selected="">请选择医院</option>
+							<option value="item-2">神经科</option>
+							<option value="item-3">item-3</option>
+							<option value="item-4">item-4</option>
+							<option value="item-5">item-5</option>
+						</select>
+						<select class="sub-select">
+							<option value="武汉市中心医院" disabled="" selected="">请选择医院</option>
+							<option value="item-2">武汉市中心医院</option>
+							<option value="item-3">item-3</option>
+							<option value="item-4">item-4</option>
+							<option value="item-5">item-5</option>
+						</select>
+						<p>Please select a hospital</p>
+					</div>
+				</div>
+			</li>
+			<!--单项选择 end-->
+			<!--单项选择 start-->
+			<li class="flex-box color-o">
+				<!--选取值之后添加class为on的类变亮-->
+				<div class="tip"></div>
+				<div class="reservation-box flex-box">
+					<i class="icon"><img src="img/icon_s_addr.png"/></i>
+					<div class="cell mui-navigate-right">
+						<!--<input type="text" value="请选择科室" disabled=""/>-->
+						<select class="multiple-select">
+							<option value="请选择科室" disabled="" selected="">请选择科室</option>
+							<option value="item-2">item-2</option>
+							<option value="item-3">item-3</option>
+							<option value="item-4">item-4</option>
+							<option value="item-5">item-5</option>
+						</select>
+						<select class="sub-select">
+							<option value="武汉市中心医院" disabled="" selected="">请选择医院</option>
+							<option value="item-2">武汉市中心医院</option>
+							<option value="item-3">item-3</option>
+							<option value="item-4">item-4</option>
+							<option value="item-5">item-5</option>
+						</select>
+						<p>Please select a department</p>
+					</div>
+				</div>
+			</li>
+			<!--单项选择 end-->
+			<!--单项选择 start-->
+			<li class="flex-box color-b">
+				<!--选取值之后添加class为on的类变亮-->
+				<div class="tip"></div>
+				<div class="reservation-box flex-box" id="showUserPicker">
+					<i class="icon"><img src="img/icon_s_doctor.png"/></i>
+					<div class="cell mui-navigate-right">
+						<!--<input type="text" value="请选择医生" id="userResult"/>-->
+						<select>
+							<option value="请选择科室" disabled="" selected="">请选择科室</option>
+							<option value="item-2">item-2</option>
+							<option value="item-3">item-3</option>
+							<option value="item-4">item-4</option>
+							<option value="item-5">item-5</option>
+						</select>
+						<p>Please choose a doctor</p>
+					</div>
+				</div>
+			</li>
+			<!--单项选择 end-->
+			<!--单项选择 start-->
+			<li class="flex-box color-g">
+				<!--选取值之后添加class为on的类变亮-->
+				<div class="tip"></div>
+				<div class="reservation-box flex-box">
+					<i class="icon"><img src="img/icon_s_time.png"/></i>
+					<div class="cell mui-navigate-right">
+						<!--<input type="text" value="请选择时间" disabled=""/>-->
+						<select>
+							<option value="请选择科室" disabled="" selected="">请选择科室</option>
+							<option value="item-2">item-2</option>
+							<option value="item-3">item-3</option>
+							<option value="item-4">item-4</option>
+							<option value="item-5">item-5</option>
+						</select>
+						<p>Please select a time</p>
+					</div>
+				</div>
+			</li>
+			<!--单项选择 end-->
+		</ul>
+		<a class="m-btn-full btn-full">提交预约</a>
+	</div>
+	<!--内容区 end-->
+	<script src="js/jquery.min.js" ></script>
+	<script>
+		$('select').change(function(){
+			$(this).parents('.flex-box').find('.tip').addClass('on');
+			if($(this).hasClass('multiple-select')){
+				
+				$(this).parent().children('select').width('45%');
+				$(this).next().show()
+			}
+		})
+	</script>
+</body>
+</html>

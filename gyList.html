@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>公益援助</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({});
+    </script>
+</head>
+<body>
+	<!--标题 strart-->
+	<header class="mui-bar mui-bar-nav h-gradient">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">公益援助</h1>
+	</header>
+	<!--标题 end-->
+	<!--内容区 start-->
+	<div class="mui-content help">
+		<!--列表 start-->
+		<ul class="list" id="list">
+			<!--一条数据 start-->
+			<li class="mui-table-view-cell">
+				<a href="javascript:;">
+					<div class="img">
+						<img src="img/gyyz.jpg" />
+						<p>已筹<span class="color">106611.79</span>元&nbsp;捐款人数<span class="color">5949</span>人</p>
+					</div>
+					<h1>爱无国界</h1>
+				</a>
+			</li>
+			<!--一条数据 end-->
+			<li class="mui-table-view-cell">
+				<a href="javascript:;">
+					<div class="img">
+						<img src="img/detail_ys.jpg" />
+						<p>已筹<span class="color">106611.79</span>元&nbsp;捐款人数<span class="color">5949</span>人</p>
+					</div>
+					<h1>爱无国界</h1>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="javascript:;">
+					<div class="img">
+						<img src="img/banner.jpg" />
+						<p>已筹<span class="color">106611.79</span>元&nbsp;捐款人数<span class="color">5949</span>人</p>
+					</div>
+					<h1>爱无国界</h1>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="javascript:;">
+					<div class="img">
+						<img src="img/gyyz.jpg" />
+						<p>已筹<span class="color">106611.79</span>元&nbsp;捐款人数<span class="color">5949</span>人</p>
+					</div>
+					<h1>爱无国界</h1>
+				</a>
+			</li>
+		</ul>
+		<!--列表 end-->
+	</div>
+	<!--内容区 end-->
+	<script src="js/jquery.min.js" ></script>
+	<script>
+		window.onload=function(){
+			$('#list img').height($('#list img').width()/2);//强制图片比例为2:1
+		}
+	</script>
+</body>
+</html>
